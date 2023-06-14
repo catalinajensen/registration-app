@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import RegistrationForm from './components/RegistrationForm';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Users from './components/Users';
 
 const router = createBrowserRouter([
   {
@@ -9,7 +10,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/users',
-    element: <>users</>
+    element: <Users />
   }
 ]);
 

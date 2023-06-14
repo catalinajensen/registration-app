@@ -59,7 +59,8 @@ function RegistrationForm() {
       phone
     };
 
-    const newPostKey = push(child(ref(database), 'posts')).key;
+    const newPostKey = push(child(ref(database), 'users')).key;
+
     const path = '/' + newPostKey;
     const updates = {
       [path]: user
